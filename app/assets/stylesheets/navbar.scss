@@ -1,0 +1,29 @@
+body{
+  margin: 0 auto;
+  font-family: sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.nav-bar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  // padding: 10px;
+  // border: 1px solid black;
+}
+.left-nav{
+  display:flex;
+  flex-direction: row;
+  // padding: 20px;
+  align-items: center;
+}
+.left-nav a{
+  padding:20px;
+}
+.logo{
+  width: 120px;
+}

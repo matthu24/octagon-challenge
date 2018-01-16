@@ -1,0 +1,42 @@
+.landing{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+ iframe{
+   padding: 30px;
+ }
+
+.text{
+  width: 500px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding-top: 20px;
+}
+
+.text2{
+
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.barrier{
+  height:35px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: -10px;
+  font-weight: bold;
+  background-color: #477987;
+
+}
