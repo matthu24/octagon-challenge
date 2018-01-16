@@ -35,19 +35,19 @@ class Form extends React.Component{
             <br/>
 
             <label htmlFor='email'>
-              <input type='text' placeHolder="Email" value={this.state.first_name} onChange={this.update("email")}/>
+              <input type='text' placeHolder="Email" value={this.state.email} onChange={this.update("email")}/>
 
             </label>
             <br/>
 
             <label htmlFor='zip'>
-              <input type='text' placeHolder="Zip" value={this.state.first_name} onChange={this.update("zip")}/>
+              <input type='text' placeHolder="Zip" value={this.state.zip} onChange={this.update("zip")}/>
 
             </label>
             <br/>
 
             <label htmlFor='state'>
-              <input type='text' placeHolder="State" value={this.state.first_name} onChange={this.update("state")}/>
+              <input type='text' placeHolder="State" value={this.state.state} onChange={this.update("state")}/>
 
             </label>
             <br/>
