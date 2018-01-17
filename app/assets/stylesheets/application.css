@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body::after{
+   content: "";
+   /*// background: url(image.jpg);*/
+   background: url("https://s3.us-east-2.amazonaws.com/octagonchallenge/background.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 0.3;
+   top: 0;
+   left: 0;
+   bottom: -20px;
+   right: 0;
+   position: absolute;
+   z-index: -1;
+ }

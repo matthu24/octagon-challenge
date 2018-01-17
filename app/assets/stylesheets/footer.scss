@@ -1,0 +1,15 @@
+.footer-div{
+  height: 50px;
+  bottom:0;
+  width: 100%;
+  position: fixed;
+background-color: lightgray;
+display:flex;
+flex-direction: row;
+justify-content:  center;
+align-items: center;
+}
+
+.footer-div a{
+  padding: 30px;
+}

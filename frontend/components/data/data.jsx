@@ -33,6 +33,7 @@ class Data extends React.Component{
           }
           </tbody>
         </table>
+        
       </div>
     )
   }
