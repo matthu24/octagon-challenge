@@ -11,6 +11,17 @@ class Form extends React.Component{
   handleSubmit(e){
     e.preventDefault();
     this.props.createSingleUser(this.state);
+    const first = document.getElementById('first-name');
+    first.value='';
+    const last = document.getElementById('last-name');
+    last.value='';
+    const email = document.getElementById('email');
+    email.value='';
+    const zip = document.getElementById('zip');
+    zip.value='';
+    const state = document.getElementById('state');
+    state.value='';
+    // let last = document.
     //this.props. whatever method to persist the data to database
   }
 
