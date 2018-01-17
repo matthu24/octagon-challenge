@@ -2,13 +2,15 @@ import React from 'react';
 
 class Form extends React.Component{
   constructor(props){
-    super(props)
-    this.state = {first_name: '', last_name: '', email: '', zip: '', state: ''};
+    super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    this.state = {first_name: '', last_name: '', email: '', zip: '', state: ''};
   }
 
   handleSubmit(e){
     e.preventDefault();
+    this.props.createSingleUser(this.state);
     //this.props. whatever method to persist the data to database
   }
 
@@ -21,37 +23,38 @@ class Form extends React.Component{
   render(){
     return(
       <div>
-        <form className='form'>
-            <h1>User Information</h1>
+        <form className='form' onSubmit={this.handleSubmit}>
+            <h2>Sign Up</h2>
             <label htmlFor='first_name'>
-              <input type='text' placeHolder="First Name" value={this.state.first_name} onChange={this.update("first_name")}/>
+              <input id="first-name" type='text' placeholder="First Name" value={this.state.first_name} onChange={this.update("first_name")}/>
             </label>
             <br/>
 
             <label htmlFor='last_name'>
-              <input type='text' placeHolder="Last Name" value={this.state.last_name} onChange={this.update("last_name")}/>
+              <input id="last-name" type='text' placeholder="Last Name" value={this.state.last_name} onChange={this.update("last_name")}/>
 
             </label>
             <br/>
 
             <label htmlFor='email'>
-              <input type='text' placeHolder="Email" value={this.state.email} onChange={this.update("email")}/>
+              <input id="email" type='text' placeholder="Email" value={this.state.email} onChange={this.update("email")}/>
 
             </label>
             <br/>
 
             <label htmlFor='zip'>
-              <input type='text' placeHolder="Zip" value={this.state.zip} onChange={this.update("zip")}/>
+              <input id ="zip" type='text' placeholder="Zip" value={this.state.zip} onChange={this.update("zip")}/>
 
             </label>
             <br/>
 
             <label htmlFor='state'>
-              <input type='text' placeHolder="State" value={this.state.state} onChange={this.update("state")}/>
+              <input id = "state" type='text' placeholder="State" value={this.state.state} onChange={this.update("state")}/>
 
             </label>
             <br/>
 
+            <input className="submit" type="submit" />
         </form>
       </div>
     )

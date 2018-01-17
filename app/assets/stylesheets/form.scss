@@ -11,6 +11,22 @@ input{
   width: 250px;
 }
 
-h1{
+.submit:hover{
+  cursor:pointer;
+}
+
+.submit{
+  background-color: #477987; /* Green */
+border: none;
+color: white;
+padding: 5px 102px;
+// width: 100px;
+text-align: center;
+text-decoration: none;
+// display: inline-block;
+font-size: 14px;
+}
+h2{
   padding-bottom: 40px;
+  padding-top: 20px;
 }

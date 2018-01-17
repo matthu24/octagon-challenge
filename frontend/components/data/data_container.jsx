@@ -10,6 +10,8 @@ const mapStateToProps = state => ({
 //mapDispatchToProps actually dispatches the action creator fetchAllArtists
 //the state is then changed to how you specified in the reducer
 const mapDispatchToProps = dispatch => ({
+  fetchAllUsers: () => dispatch(fetchAllUsers())
+
 });
 
 export default connect(
