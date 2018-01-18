@@ -12,6 +12,10 @@ class Form extends React.Component{
     this.props.clearAllErrors();
   }
 
+  componentWillReceiveNewProps(newProps){
+    this.props.clearAllErrors();
+  }
+
   renderErrors(){
     const errors = this.props.errors ? (
       <ul>

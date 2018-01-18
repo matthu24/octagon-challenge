@@ -15,6 +15,20 @@ input{
   cursor:pointer;
 }
 
+.errors ul li {
+  color:red;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+  margin-right: 45px;
+}
+
+.errors li{
+  list-style: none;
+
+}
+
 .submit{
   background-color: #477987; /* Green */
 // border: none;
