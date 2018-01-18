@@ -8,6 +8,26 @@ class Form extends React.Component{
     this.state = {first_name: '', last_name: '', email: '', zip: '', state: ''};
   }
 
+  componentWillUnmount(){
+    this.props.clearAllErrors();
+  }
+
+  renderErrors(){
+    const errors = this.props.errors ? (
+      <ul>
+        {this.props.errors.map((error,i)=> <li key={i}>{error}</li>)}
+      </ul>
+    ) : null;
+    return (
+      <div>
+        {errors}
+      </div>
+
+    )
+
+
+  }
+
   handleSubmit(e){
     e.preventDefault();
     this.props.createSingleUser(this.state);
@@ -64,9 +84,13 @@ class Form extends React.Component{
 
             </label>
             <br/>
-
             <input className="submit" type="submit" />
+
+              <div className="errors">
+                {this.renderErrors()}
+              </div>
         </form>
+
       </div>
     )
   }

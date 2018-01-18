@@ -3,11 +3,14 @@
   bottom:0;
   width: 100%;
   position: fixed;
-background-color: lightgray;
+background-color: #DCDCDC;
 display:flex;
 flex-direction: row;
 justify-content:  center;
 align-items: center;
+font-weight: bold;
+color:black;
+border-top: 1px solid gray;
 }
 
 .footer-div a{
